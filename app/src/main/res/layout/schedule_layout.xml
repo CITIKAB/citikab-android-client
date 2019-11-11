@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+
+    android:tag="cards main container">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layoutDirection="@string/layout_direction"
+        card_view:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/soon_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/pending"
+                    android:textColor="@color/text_black" />
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="2dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/soon_line"
+                android:background="@color/infobackcolur" />
+
+            <RelativeLayout
+                android:id="@+id/time_cartype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/soon_line"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date_and_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_time"
+                    android:textColor="@color/text_black" />
+
+                <TextView
+                    android:id="@+id/trip_tupe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date_and_time"
+                    android:text="@string/schedule_car_details"
+                    android:textColor="@color/text_light_gray" />
+
+                <View
+                    android:id="@id/line1"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/trip_tupe" />
+
+
+                <TextView
+                    android:id="@+id/car_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date_and_time"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/line1"
+                    android:text="@string/car_type"
+                    android:textColor="@color/text_light_gray" />
+
+                <View
+                    android:id="@id/line"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/car_type" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date_and_time"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/line"
+                    android:text="@string/amount_schedule"
+                    android:textColor="@color/text_light_gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/infobackcolur"
+                    android:paddingStart="2dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/pic_drp_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_cartype"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arrow"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/pickup_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ub__marker_pickup_walk" />
+
+                    <TextView
+                        android:id="@+id/vr_line"
+                        android:layout_width="2dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/pickup_point"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/pickup_dest_point_color" />
+
+                    <ImageView
+                        android:id="@+id/dest_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vr_line"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ub__marker_destination_walk" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/pic_drop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arrow"
+                    android:layout_toEndOf="@+id/relativeLayout2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/pickupaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white_bgcolor"
+                            android:ellipsize="end"
+                            android:paddingStart="10dp"
+                            android:singleLine="true"
+                            android:text="@string/currentlocation"
+                            android:textColor="@color/text_black"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/destadddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white_bgcolor"
+                            android:ellipsize="end"
+                            android:paddingStart="10dp"
+                            android:singleLine="true"
+                            android:text="@string/whereto"
+                            android:textColor="@color/text_black"
+                            android:textSize="16dp"></TextView>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@color/infobackcolur"
+                    android:paddingStart="2dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/cancel_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic_drp_lay"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white_bgcolor"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:text="@string/edit_ride"
+                        android:textColor="@color/blue_text_color"
+                        android:textSize="16dp"></TextView>
+
+                <TextView
+                        android:id="@+id/cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white_bgcolor"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:text="@string/cancel_ride"
+                        android:textColor="@color/blue_text_color"
+                        android:textSize="16dp"></TextView>
+
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/cancel_lay"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/infobackcolur"
+                    android:paddingStart="2dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+

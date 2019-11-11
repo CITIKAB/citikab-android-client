@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apiui.OtpActivity">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_color"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:visibility="invisible"
+            android:src="@drawable/gobackleftarrowwrite" />
+
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/arrow"
+            android:gravity="center_vertical"
+            android:text="@string/enter_otp"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp_message"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/radio_button_blue"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="18sp">
+    </TextView>
+    <co.paystack.android.design.widget.PinPadView
+        android:id="@+id/pinpadView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#292929"
+        android:inputType="number"
+        app:prompt_textcolor="@color/white"
+        app:pin_indicator_size="0dp"
+        app:auto_submit="false"
+        app:button_alpha_textsize="0sp"
+        app:button_drawable_size="24dp"
+        app:button_numeric_textsize="15sp"
+        app:pin_indicator_stroke_width="0dp"
+        app:pin_length="6"
+        app:place_digits_randomly="false"
+        app:prompt_text="Please enter OTP"
+        app:prompt_textsize="16sp"
+        app:vibrate_on_incomplete_submit="false"/>
+</LinearLayout>

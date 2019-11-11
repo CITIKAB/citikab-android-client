@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GladePay.GladePaycardActivity">
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_color"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:src="@drawable/gobackleftarrowwrite" />
+
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/arrow"
+            android:gravity="center_vertical"
+            android:text="@string/credit_or_debit_card"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_card_details_layout"
+        android:visibility="visible"
+        android:layout_below="@+id/back">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/txt_input_card_number"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/card_resize"
+                android:drawablePadding="10dp"
+                android:layout_weight="1"
+                android:id="@+id/edt_card_number"
+                app:fontName="@string/font_UBERNews"
+                android:inputType="number"
+                android:hint="@string/card_no" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/card_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_input_card_number"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_expire_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/back"
+                android:layout_weight=".5">
+
+                <EditText
+                    android:id="@+id/edt_expire_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mm"
+                    android:inputType="number"
+                    app:fontName="@string/font_UBERNews"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_expire_year"
+                android:layout_width="0dp"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/back"
+                android:layout_marginEnd="5dp"
+                android:layout_weight=".5">
+
+                <EditText
+                    android:id="@+id/edt_expire_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/yyyy"
+                    android:inputType="number"
+                    app:fontName="@string/font_UBERNews"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#ffd6d7d7" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_cvc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_expire_date"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/edt_cvc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cvv"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"
+                    app:fontName="@string/font_UBERNews"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/txt_input_pin"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_below="@+id/card_details_layout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_pin"
+                android:visibility="visible"
+                android:inputType="numberPassword"
+                android:hint="Enter your pin"
+                app:fontName="@string/font_UBERNews"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/txt_input_amount"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txt_input_pin">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_amount"
+                android:inputType="number"
+                android:hint="@string/enter_amount"
+                app:fontName="@string/font_UBERNews"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pin_title"
+            android:visibility="gone"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+           android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:layout_below="@id/card_details_layout"
+            android:inputType="numberDecimal"
+            android:hint="Enter your pin" />
+
+        <RelativeLayout
+            android:id="@+id/rl_edittexts"
+            android:layoutDirection="@string/default_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/pin_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+
+
+            <EditText
+                android:id="@+id/one"
+                android:layout_width="60dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="2dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="10dp"
+                android:textSize="20dp">
+
+                <requestFocus />
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/two"
+                android:layout_width="60dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="2dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+
+                android:layout_toEndOf="@+id/one"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="10dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/three"
+                android:layout_width="60dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="2dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+
+                android:layout_toEndOf="@+id/two"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="10dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/four"
+                android:layout_width="60dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="2dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+
+                android:layout_toEndOf="@+id/three"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="10dp"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fab_verify"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="30dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/button_disable_color">
+
+        <ImageView
+
+            android:id="@+id/imgv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/arrownextright"
+            />
+
+    </android.support.v7.widget.CardView>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/textError"
+       android:gravity="center_horizontal"
+       android:text="TExtError"
+       android:visibility="gone"
+       android:layout_centerInParent="true"
+       android:textSize="18sp"/>
+
+</RelativeLayout>

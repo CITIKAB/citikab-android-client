@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/gobackleftarrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mobilelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next"
+        android:layout_below="@+id/back"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:transitionName="mobilelayout">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/entermobileno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/getmobilenumber"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            android:transitionName="mobilenumber"
+            app:fontName="@string/font_UBERBook" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile_txt"
+            android:background="@color/white">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layoutDirection="@string/layout_direction"
+                android:textAlignment="textStart"
+                app:ccp_arrowSize="16sp"
+                app:ccp_showArrow="false"
+                app:ccp_autoDetectLanguage="true"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="20sp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ccp"
+                android:background="@drawable/d_buttomboardermobilenumber">
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/next"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundnextbuttonlayout">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/arrownextright" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/blue_light_loader_color"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone"></ProgressBar>
+
+    </RelativeLayout>
+</RelativeLayout>

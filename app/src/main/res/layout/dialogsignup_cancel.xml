@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/canceltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancelaccount_title"
+            android:textColor="@color/text_black"
+            android:textSize="20dp"
+            app:fontName="@string/font_UBERBook" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/cancel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/canceltext"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancelaccount_msg"
+            android:textColor="@color/text_black"
+            android:textSize="12dp"
+            app:fontName="@string/font_UBERBook" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel5"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <com.trioangle.gofer.custompalette.FontButton
+                android:id="@+id/signup_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/d_black_bordor"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/cancel"
+                android:textSize="16dp"
+                app:fontName="@string/font_UBERMedium" />
+
+            <com.trioangle.gofer.custompalette.FontButton
+                android:id="@+id/signup_cancel_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/cancelbuttonblackborder"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:fontName="@string/font_UBERMedium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

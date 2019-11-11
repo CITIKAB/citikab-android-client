@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+
+    <com.trioangle.gofer.custompalette.FontTextView
+        android:id="@+id/enter_amount_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:duplicateParentState="true"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_amount"
+        android:textColor="@color/textgray"
+        android:textSize="16dp"
+        app:fontName="@string/font_UBERNews" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_amount_msg"
+        android:layout_centerHorizontal="true">
+
+        <com.trioangle.gofer.custompalette.FontEditText
+            android:id="@+id/walletamt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textSize="16dp"
+            app:fontName="@string/font_UBERNews" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/relativeLayout4"
+        android:layout_marginTop="20dp"
+        android:background="@color/linegray" />
+
+    <com.trioangle.gofer.custompalette.FontTextView
+        android:id="@+id/currency_symbol_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view"
+        android:layout_toStartOf="@+id/relativeLayout4"
+        android:text="$"
+        android:textColor="@color/text_black"
+        android:textSize="25dp"
+        app:fontName="@string/font_Medium" />
+
+    <RelativeLayout
+        android:id="@id/paymentmethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:id="@+id/paymentmethod_img"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/gladepay" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/paymentmethod_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/paymentmethod_img"
+                android:text="GladePay"
+                android:textColor="@color/text_black"
+                android:textSize="16dp"
+                app:fontName="@string/font_UBERNews"/>
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="@string/change"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_text_color"
+            android:textSize="16dp"
+            app:fontName="@string/font_UBERNews" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentmethod"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp">
+
+        <com.trioangle.gofer.custompalette.FontButton
+
+
+            android:id="@+id/add_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:text="@string/add_money"
+            android:textColor="@color/white"
+
+            android:textSize="20dp"
+            app:fontName="@string/font_UBERNews" />
+    </RelativeLayout>
+</RelativeLayout>

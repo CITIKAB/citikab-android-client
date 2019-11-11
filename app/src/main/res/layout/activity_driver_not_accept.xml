@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.gofer.sendrequest.DriverNotAcceptActivity">
+
+    <ImageView
+        android:id="@+id/drivernotaccept_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:scaleX=".6"
+        android:scaleY=".6"
+        android:src="@drawable/gobackleftarrow"
+        android:tint="@color/ub__black" />
+
+    <LinearLayout
+        android:id="@+id/request_receive_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/d_buttomboarder"
+            android:padding="20dp"
+            android:text="@string/sorry_no_rides"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            app:fontName="@string/font_UBERMedium" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/try_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/try_again"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_light_text_color"
+            android:textSize="20sp"
+            app:fontName="@string/font_UBERMedium" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/contact_admin_for_manual_booking"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            android:id="@+id/tv_manualtitle"
+            app:fontName="@string/font_UBERMedium" />
+
+        <RelativeLayout
+            android:background="@color/button_color"
+            android:id="@+id/rlt_contact_admin"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_manualtitle">
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_phone"
+            android:tint="@color/white" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/tv_call"
+            android:layout_toEndOf="@+id/iv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/call_admin"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:fontName="@string/font_UBERMedium" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

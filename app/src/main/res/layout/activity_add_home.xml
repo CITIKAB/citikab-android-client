@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="@string/layout_direction">
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbottomboarder"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/gobackleftarrow"
+             />
+
+        <com.trioangle.gofer.custompalette.FontEditText
+            android:id="@+id/destadddress"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/arrow"
+            android:background="@color/placesearch_bggrey_color"
+            android:ellipsize="end"
+            android:hint=""
+            android:paddingStart="10dp"
+            android:singleLine="true"
+            android:textSize="16dp"
+            app:fontName="@string/font_UBERNews">
+
+            <requestFocus />
+        </com.trioangle.gofer.custompalette.FontEditText>
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/destclose"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/placesearch_bggrey_color"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="R"
+            android:textSize="10dp"
+            android:visibility="gone"
+            app:fontName="@string/font_UberClone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/address_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/location_placesearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="20dp" />
+
+            <LinearLayout
+                android:background="@color/contact_border_greycolor"
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_placesearch"
+                android:orientation="vertical"
+                android:paddingEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.trioangle.gofer.custompalette.FontTextView
+                        android:id="@+id/setlocationimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="20dp"
+                        android:text="H"
+                        android:textColor="@color/text_black"
+                        android:textSize="18sp"
+                        app:fontName="@string/font_UberClone" />
+
+                    <LinearLayout
+                        android:id="@+id/setlocaion_onmap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/setlocationimage"
+
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:visibility="visible">
+
+                        <com.trioangle.gofer.custompalette.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setlocationonmap"
+                            android:textColor="@color/text_black"
+                            android:textSize="16sp"
+                            app:fontName="@string/font_UBERNews" />
+
+                        <com.trioangle.gofer.custompalette.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setlocationonmap"
+                            android:textColor="@color/textgray"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            app:fontName="@string/font_UBERNews" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainlayout"
+        android:visibility="visible">
+
+        <fragment
+
+            android:id="@+id/search_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity_for_request_pages" />
+
+        <ImageView
+            android:id="@+id/pin_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ub__ic_pin_pickup"
+            android:visibility="gone" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/drop_done"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@color/button_color"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:fontName="@string/font_UBERMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

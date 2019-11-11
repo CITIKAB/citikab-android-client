@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:duplicateParentState="true"
+        android:paddingBottom="5dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/car_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:duplicateParentState="true"
+            android:gravity="center_horizontal"
+            android:text="2 Min"
+            android:textColor="@color/text_light_gray"
+            android:textSize="15dp"
+            app:fontName="@string/font_UBERNews" />
+
+        <ImageView
+            android:id="@+id/car_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/car_min"
+            android:layout_centerHorizontal="true"
+            android:duplicateParentState="true" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:duplicateParentState="true"
+            android:text="@string/ubergo"
+            android:textColor="@color/text_light_gray"
+            android:textSize="17dp"
+            app:fontName="@string/font_UBERBook" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/car_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_name"
+            android:layout_centerHorizontal="true"
+            android:duplicateParentState="true"
+            android:gravity="center_horizontal"
+            android:text="@string/amountno7"
+            android:textColor="@color/text_light_gray"
+            android:textSize="15dp"
+            app:fontName="@string/font_UBERBook" />
+
+    </RelativeLayout>
+</LinearLayout>

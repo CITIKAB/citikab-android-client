@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.trioangle.gofer.views.signinsignup.SignupNameActivity">
+
+    <com.trioangle.gofer.custompalette.FontTextView
+        android:id="@+id/namemsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameback"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/whatisyourname"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        app:fontName="@string/font_UBERBook" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namemsg"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namemsg"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1">
+
+            <com.trioangle.gofer.custompalette.FontEditText
+                android:id="@+id/input_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="16sp"
+                app:fontName="@string/font_UBERNews" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_last"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_first"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1">
+
+            <com.trioangle.gofer.custompalette.FontEditText
+                android:id="@+id/input_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/last"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="16sp"
+                app:fontName="@string/font_UBERNews" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:id="@+id/signinterms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/next"
+            android:paddingEnd="20dp"
+            android:textColor="@color/text_black"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/roundnextbuttonlayout"
+            android:gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/arrownextright" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/gobackleftarrow" />
+    </RelativeLayout>
+</RelativeLayout>

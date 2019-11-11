@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.gofer.sidebar.Setting">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gobackleftarrowwrite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/arrow"
+            android:text="@string/accountsetting"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/back">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/parent_lay"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/favouriteslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imglatout"
+                android:background="@drawable/profileboarder">
+
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/favorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/favorites"
+                    android:textColor="@color/text_light_gray"
+                    app:fontName="@string/fonts_UBERBook" />
+
+                <RelativeLayout
+                    android:id="@+id/home_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/favorites">
+
+                    <com.trioangle.gofer.custompalette.FontTextView
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/favorites"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="t"
+                        android:textSize="20dp"
+                        app:fontName="@string/font_UberClone" />
+
+                    <com.trioangle.gofer.custompalette.FontTextView
+                        android:id="@+id/hometext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/home"
+                        android:text="@string/addhome"
+                        android:textColor="@color/text_black"
+                        app:fontName="@string/fonts_UBERBook"
+                        />
+
+                    <TextView
+                        android:id="@+id/textadress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hometext"
+                        android:layout_toEndOf="@+id/home" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlt_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_lay"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/worktext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/workaddress"
+                        android:layout_toEndOf="@+id/workimg" />
+
+                    <com.trioangle.gofer.custompalette.FontTextView
+                        android:id="@+id/workimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/home"
+                        android:layout_below="@+id/home"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="b"
+                        android:textSize="20dp"
+                        app:fontName="@string/font_UberClone" />
+
+                    <com.trioangle.gofer.custompalette.FontTextView
+                        android:id="@+id/workaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/workimg"
+                        android:text="@string/addwork"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/text_black"
+                        app:fontName="@string/fonts_UBERBook" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/eventlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/favouriteslayout"
+                android:background="@drawable/profileboarder"
+                android:visibility="gone">
+
+
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/events"
+                    android:textColor="#ff757575"
+                    app:fontName="@string/fonts_UBERBook" />
+
+
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/calender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/event"
+                    android:layout_margin="20dp"
+                    android:text="c"
+                    android:textSize="20dp"
+                    app:fontName="@string/font_UberClone" />
+
+                <com.trioangle.gofer.custompalette.FontTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/event"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/calender"
+                    android:text="Calendar"
+                    android:textColor="@color/text_black"
+                    app:fontName="@string/fonts_UBERBook" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/currencylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eventlayout"
+                android:background="@color/white"
+                android:visibility="visible">
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/currency"
+                    android:textColor="@color/text_black"
+                    app:fontName="@string/fonts_UBERBook" />
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/currency_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/currency"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue_text_color"
+                    app:fontName="@string/fonts_UBERBook" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/languagelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currencylayout"
+                android:background="@color/white"
+                android:visibility="visible">
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/language"
+                    android:textColor="@color/text_black"
+                    app:fontName="@string/fonts_UBERBook" />
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/language"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue_text_color"
+                    app:fontName="@string/fonts_UBERBook" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/logoutlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/languagelayout"
+                android:background="@color/white">
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/signOut"
+                    android:textColor="@color/text_black"
+                    app:fontName="@string/fonts_UBERBook" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/imglatout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/profileboarder"
+                android:paddingBottom="5dp">
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="20dp" />
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/nametext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/profile_image"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_black"
+                    app:fontName="@string/fonts_UBERBook" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

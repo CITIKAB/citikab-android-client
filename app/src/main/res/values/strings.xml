@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [<!ENTITY appname "CitiKab">]>
+<resources>
+
+    <string name="app_name" translatable="false">&appname;</string>
+    // Application name
+
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN" translatable="false">b3d6b246db287885b9e1f42db244dfb1</string>
+
+    <string name="ak_login_protocol_scheme" translatable="false">790103201152072</string>
+
+    <string name="facebook_key" translatable="false">"790103201152072"</string>
+    // Facebook key to access facebook login
+
+    <string name="facebook_provider" translatable="false">"com.facebook.app.FacebookContentProvider790103201152072"</string>
+    // Facebook provider id change last id
+
+    <string name="google_maps_key" translatable="false">AIzaSyDq6N_AZBav7KlBiWR7l0eNmw6e3rari9A</string>
+    // Google map and place API key
+
+    <string name="package_driver" translatable="false">"com.trioangle.goferdriver"</string>
+
+    <string name="google_client_id" translatable="false">239640610908-athcqac8ptlfupuu41vkb093qfd58tfs.apps.googleusercontent.com</string>
+    // 0 for sandbox, 1 for production(live)
+
+    <!--Translatable false-->
+    <string name="use_in_case_of_emergency">Use In Case of emergency</string>
+    <string name="payment_name">"&appname; Payment"</string>
+    <string name="getmoving">Get moving with &appname;</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="mobileenterhint">Enter your mobile \nnumber</string>
+    <string name="connectsocila">Or connect with social</string>
+    <string name="phonenumber">Phone Number</string>
+
+    <string name="getmobilenumber">Enter your mobile number</string>
+    <string name="chooseaccount">Choose an account</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+    <string name="alert_your_emergency_contacts">Alert your Emergency Contacts</string>
+    <string name="welcomeback">Welcome back, sign in to continue</string>
+    <string name="forgotpassword">I forgot my password</string>
+    <string name="resetpasswords">Reset your password</string>
+    <string name="creatacount">Create an Account</string>
+    <string name="soscontent">&appname; collects location data during an active booking from your device to ensure a
+        safe and smooth ride experience
+    </string>
+    <string name="close">CLOSE</string>
+    <string name="continue_alert">Continue</string>
+    <string name="continue_to_send_alert">Continue to send alert?</string>
+    <string name="sucessmessfe">Messege Sent Successfully</string>
+    <string name="messagesenttoadmin">Message Successfully Sent to Admin</string>
+
+
+    <string name="enteremailadress">Enter the email address you used to register</string>
+    <string name="car_unavailable">"Unfortunately, &appname; is currently unavailable in your area."
+    </string>
+    <string name="email">EMAIL</string>
+    <string name="cancel">CANCEL</string>
+    <string name="editaccount">Edit Account</string>
+    <string name="textpayment">Payment</string>
+    <string name="paypal_payment">PayPal</string>
+    <string name="addpayment">Add Payment</string>
+    <string name="helptitle">Help</string>
+
+    <string name="capacity">Capacity</string>
+    <string name="fare">Fare</string>
+    <string name="done">DONE</string>
+    <string name="continues">"CONTINUE"</string>
+
+    <string name="pricepresented">Your fare will be the price presented before the trip or based on the rates below and
+        other applicable surcharges and adjustments.
+    </string>
+    <string name="basefare">Base Fare</string>
+    <string name="perminute">+ Per Minute</string>
+    <string name="perkm">+ Per km</string>$37.10
+
+    <string name="requestuber">"REQUEST "</string>
+    <string name="amountno7">$53.00</string>
+    <string name="ubergo">&appname;Go</string>
+    <string name="cancel_your_trip">"CANCEL YOUR TRIP"</string>
+
+    <string name="paymentmethods">Payment Methods</string>
+    <string name="cash">Cash</string>
+    <string name="wallets">Wallet</string>
+    <string name="promotions">Promotions</string>
+    <string name="add">"Add"</string>
+    <string name="add_promo">"Add Promo/Gift Code"</string>
+    <string name="free_trip">Free trip up to</string>
+    <string name="from">from</string>
+    <string name="off">OFF</string>
+    <string name="promo_applied">Promo Applied</string>
+    <string name="enter_promo_code">"Enter your promo/gift code"</string>
+    <string name="wallet">Wallet</string>
+    <string name="use_wallet">Use Wallet</string>
+    <string name="wallet_amount">Your Wallet amount is</string>
+    <string name="add_amount">Add Amount</string>
+    <string name="payable_amount">"Payable Amount"</string>
+    <string name="paid_amount">"Paid Amount"</string>
+    <string name="enter_amount">Enter the amount</string>
+    <string name="add_money">"Add money to the wallet</string>
+    <string name="pay">Pay</string>
+    <string name="trip_id">Trip Id :</string>
+    <string name="proceed">Proceed</string>
+    <string name="waitfordriver">Waiting for driver confirmation</string>
+    <string name="gladepay">GladePay</string>
+    <string name="credit_or_debit_card">Add Credit or Debit Card</string>
+    <string name="change_credit_or_debit_card">Change Credit or Debit Card</string>
+    <string name="card">Card</string>
+    <string name="save">save</string>
+
+    <string name="baseFare">Base Fare</string>
+    <string name="currency">"Currency"</string>
+    <string name="usd">"USD ($)"</string>
+    <string name="selectcurrency">"Select Currency"</string>
+    <string name="signOut">Sign Out</string>
+    <string name="tripDetails">Trip Details</string>
+    <string name="fordFiesta">Ford Fiesta</string>
+    <string name="FordFiesta">Ford Fiesta</string>
+    <string name="nameexamplecom">name@example.com</string>
+
+    <string name="YourTrips">Your Trips</string>
+    <string name="address">6,Elliots Promenade odaimanagar,Besant Nagar,Chennai,Tamil Nadu 600090,India</string>
+
+    <string name="request_car_msg">"Contacting</string>
+    <string name="request_car_msg1">" near you&#8230;</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="addhome">Add Home</string>
+    <string name="addwork">Add Work</string>
+    <string name="home">"Home</string>
+    <string name="work">"Work"</string>
+    <string name="events">Events</string>
+    <string name="signout_msg">"Are you sure you want to sign out?"</string>
+    <string name="cancel_s">"Cancel"</string>
+    <string name="signout">"Sign Out"</string>
+
+    <string name="accountsetting">Account Settings</string>
+
+    <string name="enter4digit">Enter the 4-digit code sent to you at</string>
+    <string name="resend">Resend Code</string>
+    <string name="affordable">Affordable,everyday rides</string>
+
+    <string name="otp_emty">"Please enter the OTP"</string>
+    <!-- Help Page started -->
+    <string name="tripsreview">Trips and Fare Review</string>
+    <string name="accountpayment">Account and Payment Options</string>
+    <string name="guideuber">A Guide to &appname;</string>
+    <string name="signingup">Signing Up</string>
+    <string name="more">More</string>
+    <string name="accessibility">Accessibility</string>
+    <string name="additionaltopics">Additional topics</string>
+    <!-- Fare Breakdown Page -->
+
+    <string name="farebreakdown">Fare Breakdown</string>
+    <string name="farediscribction">The fare will be the price presented upon booking, or, if the journey changes, the
+        fare will be based on the rates provided.Tap fare for details.
+    </string>
+
+    <!-- Home Page started -->
+    <string name="payment">Payment</string>
+    <string name="yourtrips">Your Trips</string>
+    <string name="begin_trip">"Begin Trip"</string>
+    <string name="Rating">Rating</string>
+    <string name="completed">Completed</string>
+    <string name="Cancelled">Cancelled</string>
+    <string name="end_trip">"End Trip"</string>
+    <string name="scheduled">"Scheduled"</string>
+    <string name="not_now">NOT NOW</string>
+    <string name="camera_permission_description">To capture photos and videos, allow &appname; to access your camera and
+        storage
+    </string>
+    <string name="storage_permission_description">To upload profile image &appname; to access your storage</string>
+    <string name="location_permission_description">To request your ride, allow &appname; to access your device
+        location
+    </string>
+    <string name="contacts_permission_description">To add emergency contacts, allow &appname; to access your contacts
+    </string>
+    <string name="settings">Settings</string>
+    <string name="drivewithuber">Drive With &appname;</string>
+    <string name="legal">Legal</string>
+    <string name="whereto">Where to?</string>
+
+    <string name="pickuplocation">"Pickup Location"</string>
+    <string name="currentlocation">"Current Location"</string>
+    <string name="setlocationonmap">"Set location on map"</string>
+    <string name="scheduleride">"Schedule a Ride"</string>
+
+    <string name="contact_C">"CONTACT"</string>
+    <string name="contact">"Contact"</string>
+    <string name="call">"Call"</string>
+    <string name="callsonly">"CALLS ONLY"</string>
+
+    <!-- Home Page Ended -->
+
+
+    <!-- Route Page -->
+
+    <string name="arrival">"1:51pm arrival"</string>
+    <string name="sharestatus">"Share Status"</string>
+    <string name="ratetext">"$79.76"</string>
+    <string name="mastercard">"MasterCard 2930"</string>
+    <string name="restaurantdelights">"Restaurant delights"</string>
+    <string name="uberittowangs">"Uber it to Wangs"</string>
+    <string name="enrote">"En Route"</string>
+    <string name="mins">"mins"</string>
+    <string name="min">"mins"</string>
+    <string name="yourcurrenttrip">"Your current trip"</string>
+    <string name="change">"Change"</string>
+
+
+    <!-- First and last name Page started -->
+    <string name="notrip">"You have no trip"</string>
+    <string name="whatisyourname">"What's your name?"</string>
+    <string name="confirmyourinformation">"Confirm your information"</string>
+    <string name="first">"First Name"</string>
+    <string name="last">"Last Name"</string>
+    <string name="email_s">"Email"</string>
+    <string name="password">Password</string>
+    <string name="mobile_s">"Mobile Number"</string>
+    <string name="sigin_terms1">"By continuing, I confirm that I have read and agree to the "</string>
+    <string name="sigin_terms2">"Terms &amp; Conditions"</string>
+    <string name="sigin_terms3">" and "</string>
+    <string name="sigin_terms4">"Privacy Policy"</string>
+    <string name="cancelaccount_title">"Cancel account creation?"</string>
+    <string name="cancelaccount_msg">"Your information will not be saved."</string>
+    <string name="confirm">"CONFIRM"</string>
+    <string name="your_ride_with">"Your ride with"</string>
+    <string name="cancelaccouunt_bottom">"To cancel account creation"</string>
+    <!-- First and last name Page started -->
+
+    <!-- First and last name Page started -->
+    <string name="error_msg_firstname">"Please enter your first name"</string>
+    <string name="error_msg_lastname">"Please enter your last name"</string>
+    <string name="error_msg_email">"Please enter a valid email address"</string>
+    <string name="error_msg_phone">"Please enter a valid mobile number"</string>
+    <string name="error_msg_password">"Please enter minimum 6 characters"</string>
+    <string name="error_msg_rating">"Please give your rating"</string>
+    <!-- First and last name Page started -->
+
+
+    <!-- Error Messages -->
+
+    <string name="otp_mismatch">"OTP code Mismatch."</string>
+    <string name="InvalidMobileNumber">Invalid mobile number</string>
+    <string name="InvalidPassword">Please enter minimum 6 characters</string>
+    <string name="Passwordmismatch">Password Mismatch</string>
+    <string name="Enteryourpassword">Enter your password</string>
+    <string name="Confirmyourpassword">Confirm your password</string>
+
+
+    <!--Translatable false-->
+
+    <!-- fonts started -->
+
+    /* ***************************************************** */
+    <string name="fonts_Book" translatable="false">"ClanPro-Book.otf"</string>
+    <string name="fonts_Medium" translatable="false">"ClanPro-Medium.otf"</string>
+    <string name="fonts_NarrBook" translatable="false">"ClanPro-NarrBook.otf"</string>
+    <string name="fonts_NarrMedium" translatable="false">"ClanPro-NarrMedium.otf"</string>
+
+    <string name="fonts_NarrNews" translatable="false">"ClanPro-NarrNews.otf"</string>
+    <string name="fonts_News" translatable="false">"ClanPro-News.otf"</string>
+    <string name="fonts_WideMedium" translatable="false">"ClanPro-WideMedium.otf"</string>
+    <string name="fonts_WideNews" translatable="false">"ClanPro-WideNews.otf"</string>
+
+    <string name="fonts_UBERBook" translatable="false">"ClanProForUBER-Book.ttf"</string>
+    <string name="fonts_UBERMedium" translatable="false">"ClanProForUBER-Medium.ttf"</string>
+    <string name="fonts_UBERNews" translatable="false">"ClanProForUBER-News.ttf"</string>
+
+    <string name="fonts_PermanentMarker" translatable="false">"PermanentMarker.ttf"</string>
+    <string name="fonts_UberClone" translatable="false">"uber-clone-mobile.ttf"</string>
+
+    /* ***************************************************** */
+    <string name="font_Book" translatable="false">"ClanPro-Book"</string>
+    <string name="font_Medium" translatable="false">"ClanPro-Medium"</string>
+    <string name="font_NarrBook" translatable="false">"ClanPro-NarrBook"</string>
+    <string name="font_NarrMedium" translatable="false">"ClanPro-NarrMedium"</string>
+
+    <string name="font_NarrNews" translatable="false">"ClanPro-NarrNews"</string>
+    <string name="font_News" translatable="false">"ClanPro-News"</string>
+    <string name="font_WideMedium" translatable="false">"ClanPro-WideMedium"</string>
+    <string name="font_WideNews" translatable="false">"ClanPro-WideNews"</string>
+
+    <string name="font_UBERBook" translatable="false">"ClanProForUBER-Book"</string>
+    <string name="font_UBERMedium" translatable="false">"ClanProForUBER-Medium"</string>
+    <string name="font_UBERNews" translatable="false">"ClanProForUBER-News"</string>
+
+    <string name="font_PermanentMarker" translatable="false">"PermanentMarker"</string>
+    <string name="font_UberClone" translatable="false">"uber-clone-mobile"</string>
+
+    <!-- fonts ended -->
+
+    <string name="uberfee">"Access Fee"</string>
+    <string name="distancefare">"Distance Fare"</string>
+    <string name="timefare">"Time Fare"</string>
+    <string name="estimatedpayout">"Total Trip Fare"</string>
+    <string name="wallet_amounts">"Wallet Amount"</string>
+    <string name="promo_amounts">"Promo Amount"</string>
+
+    <!--Fetch Address-->
+    <string name="no_connection">No internet connection</string>
+
+
+    <string name="schedule">"SCHEDULE "</string>
+
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="UpcomingRideSet">"Upcoming Ride Set"</string>
+    <string name="currentestimation">"Current fare estimation"</string>
+    <string name="pending">"Pending</string>
+    <string name="schedule_car_details">"Personal"</string>
+    <string name="car_type">"&appname; X"</string>
+    <string name="date_time" translatable="false">"THU, Feb 20 at 10:25AM - 10:40AM"</string>
+    <string name="termschedule">"Actual estimate to be provided prior to pickup Fares may Vary due to traffic,weather
+        &amp; other factors &appname; doesn't guarantee it driver will accept your ride request"
+    </string>
+    <string name="pasttrip">"Past"</string>
+    <string name="noschedulerides">"You have no upcoming rides</string>
+    <string name="amount_schedule" translatable="false">"$ 26-34"</string>
+    <string name="cancel_ride">"CANCEL RIDE"</string>
+    <string name="upcomingtrips">"Upcoming"</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="emergency_contacts">Emergency contacts</string>
+    <string name="let_s_make_travel_safe">Let\'s make travel safe</string>
+    <string name="alert_your_contact">Alert your dear ones in case of an emergency Add them to your emergency
+        contacts.
+    </string>
+    <string name="you_can_add_5_contacts">You can add up to 5 contacts</string>
+    <string name="remove">Remove any contact to add another</string>
+    <string name="add_contacts">Add contacts</string>
+    <string name="testname" translatable="false">Vimal</string>
+    <string name="testphonenumber" translatable="false">+91 1235479895</string>
+    <string name="delete">Delete</string>
+
+    <string name="getting_car_detail">Getting Cars Details&#8230;</string>
+    <string name="press_again_toexit">Press back again to exit</string>
+    <string name="sorry_no_rides">Sorry, no rides available now</string>
+    <string name="sorry_unable_create_map">Sorry! unable to create maps</string>
+    <string name="try_again">try again</string>
+    <string name="try_again_later">TRY AGAIN LATER</string>
+    <string name="receipt">Receipt</string>
+    <string name="addphoto">Add Photo</string>
+    <string name="takephoto">Take Photo</string>
+    <string name="choosefromlib">Choose from Library</string>
+    <string name="gettinglocate">Getting location&#8230;</string>
+    <string name="phone">Phone</string>
+    <string name="verify">Verify</string>
+    <string name="please_enter_promo">Please enter the Promo Code</string>
+    <string name="language">Language</string>
+    <string name="selectlanguage">Select Language</string>
+    <string name="turnoninternet">Turn on your Internet</string>
+    <string name="ok">OK</string>
+    <string name="setpickuptime">"SET PICKUP TIME"</string>
+    <string name="driverarrrive">Driver Arrive Now&#8230;</string>
+    <string name="yourtripcancelledbydriver">Your trip cancelled by driver&#8230;</string>
+    <string name="yourtripbegin">Your Trip Begins Now&#8230;</string>
+    <string name="paymentcompleted">Payment completed successfully&#8230;</string>
+    <string name="rateyourride">Rate your ride</string>
+    <string name="smoothorsloopy">Smooth or Sloppy?</string>
+    <string name="writecomment">Write your comments&#8230;</string>
+    <string name="paymentdetails">Payment Details</string>
+    <string name="otherreasons">Other reasons</string>
+    <string name="enterworkaddress">Enter work address</string>
+    <string name="enterhomeaddress">Enter home address</string>
+    <string name="servicenotavailable">Service not available&#8230;</string>
+
+
+    <string name="layout_direction">0</string>
+    <string name="edit_ride">EDIT TIME</string>
+    <string name="people">People</string>
+
+    <string name="network_failure">Please check your Internet Connection</string>
+    <string name="internal_server_error">Please try again after sometimes.</string>
+    <string name="img_src" translatable="false">/sdcard/Gofer/slectimage.png</string>
+    <string name="camera">Camera</string>
+    <string name="camera_roll">Camera roll</string>
+    <string name="please_enable_permissions">Please enable app permissions</string>
+    <string name="nocabs">No cabs</string>
+    <string name="loading">Loading …</string>
+    <string name="number_exists">Already Mobile Number Exists</string>
+    <string name="cancelreason">The Cancel reason required is required</string>
+    <string name="no_cars">No cars available...</string>
+    <string name="no_cabs">No cabs</string>
+    <string name="picker_today" translatable="false">Today</string>
+    <string name="picker_am" translatable="false">AM</string>
+    <string name="picker_pm" translatable="false">PM</string>
+    <string name="mobilenum">Mobile Number Exist</string>
+    <string name="no_contacts_selected">No contacts selected</string>
+    <string name="next">NEXT</string>
+    <string name="message">Message</string>
+    <string name="PeakPricing">PEAK TIME PRICING</string>
+    <string name="iAcceptHigherPrice">I ACCEPT HIGHER FARE</string>
+    <string name="peakPriceDescription">"Demand is off the charts! Fares have increased to get more &appname;
+        on the
+        road."
+    </string>
+    <string name="the_normal_fare">THE NORMAL FARE</string>
+    <string name="driver">Driver</string>
+
+    <string-array name="cancel_types">
+        <item>"Why are you cancel?"</item>
+        <item>"My driver and I couldn’t connect"</item>
+        <item>"My pick up location was incorrect"</item>
+        <item>"My driver cancelled"</item>
+        <item>"The ETA was too long"</item>
+        <item>"The ETA was too short"</item>
+        <item>"My driver asked me to cancel"</item>
+        <item>"Other"</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>فارسی</item>
+        <item>Español</item>
+        <item>عربى</item>
+    </string-array>
+    <string-array name="languageCode" translatable="false">
+        <item>en</item>
+        <item>fa</item>
+        <item>es</item>
+        <item>ar</item>
+    </string-array>
+    <string name="minimum_fare">MINIMUM FARE</string>
+    <string name="signin">Sign In</string>
+    <string name="register">Register</string>
+    <string name="enable_permissions_to_proceed_further">Enable permission to proceed further</string>
+    <string name="pickup_and_drop_location_is_same">Pickup and Drop location is same&#8230;</string>
+    <string name="unable_to_get_location">Unable to get location please try again&#8230;</string>
+
+    Demo Base URL
+    <string name="baseurl" translatable="false">"http://gofer.trioangle.com/api/"</string>
+    // base url
+    <string name="imageurl" translatable="false">"http://gofer.trioangle.com/images/"</string>
+    // Image upload base url
+    <string name="Termpolicy" translatable="false">"http://gofer.trioangle.com/"</string>//Terms and
+    policy
+
+    <string name="send_a_message">Send a message</string>
+    <string name="referral">Invites</string>
+    <string name="your_invite_code">Your invite Code</string>
+    <string name="share_my_code">Share My Code</string>
+    <string name="copy_code">Copy invite code</string>
+    <string name="friends_incompleted">Friends - Incompleted</string>
+    <string name="friends_completed">Friends - Completed</string>
+    <string name="referral_code_copied">Referral Code Copied</string>
+    <string name="referral_code_not_copied">Unable to copy Referral code, please share the code</string>
+    <string name="days_left">days left</string>
+    <string name="need_to_complete">Need to complete</string>
+    <string name="trips">trips</string>
+    <string name="max_referral_earning_statement">Get up to %s for every  friend who rides with &appname;</string>
+    <string name="referral_code_optional">Referral Code (Optional)</string>
+    <string name="earned">"Earned "</string>
+    <string name="no_referrals_yet">No Referrals Yet</string>
+    <string name="referral_completed">Referral Completed</string>
+    <string name="referral_expired">Referral Expired</string>
+    <string name="skip">Skip</string>
+    <string name="rate_your_ride">Rate your ride</string>
+    <string name="enter_wallet_amount">Please enter the wallet amount 50 or above</string>
+    <string name="manual_booking">Manual Booking</string>
+    <string name="contact_admin">Contact admin for booking %s</string>
+    <string name="call_admin">Call %s</string>
+    <string name="contact_admin_for_manual_booking">Contact admin for manual booking</string>
+    <string name="dial">Dial %s</string>
+    <string name="no_contact_found">No contact found</string>
+    <string name="share_to_contacts">Share to contacts</string>
+    <string name="share_code">Share Code!</string>
+    <string name="invite_msg"><![CDATA[SignUp & Get Paid For Every Invited Sign-up & Much More Bonus Awaits! Use my invite code]]></string>
+
+    <string name="default_direction" translatable="false">0</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="resend_otp">"Didn't Receive the OTP?"</string>
+    <string name="otp_send_to_phone_description">"We have sent you access code via SMS \n for mobile number verification"</string>
+    <string name="send_OTP_again_in">You can send OTP again in</string>
+    <string name="enter_valid_otp">Enter valid OTP!</string>
+    <string name="OTP">"OTP  "</string>
+    <string name="mobile_verification">Mobile Verification</string>
+    <string name="please_enter_mobile_number">Please enter your mobile number</string>
+    <string name="your_otp_is">"Your OTP is\t"</string>
+    <string name="card_no">Card Number</string>
+    <string name="cvv">CVC</string>
+    <string name="yyyy">YY</string>
+    <string name="mm">MM</string>
+    <string name="enter_pin">Enter the PIN</string>
+</resources>

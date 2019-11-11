@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp">
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carname"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="@string/affordable"
+                android:textColor="@color/text_black"
+                android:textSize="20dp"
+                app:fontName="@string/font_UBERBook" />
+
+            <ImageView
+                android:id="@+id/car2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+            />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/carname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_black"
+                android:textSize="25dp"
+                app:fontName="@string/font_UBERBook" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainlayout"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capacity"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/capacity"
+            android:text="@string/fare"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/people"
+            android:layout_toStartOf="@+id/faredeatils"
+            android:paddingEnd="5dp"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+        <ImageView
+            android:id="@+id/faredeatils"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/people"
+            android:background="@drawable/infoicon" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/discribctionlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondlayout"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/farediscribction"
+            android:textColor="#37000000"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discribctionlay"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttoontopboarder">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/blue_text_color"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

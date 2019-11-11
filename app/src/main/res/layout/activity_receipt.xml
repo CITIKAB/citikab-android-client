@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/basrfarelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/faretxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="@string/baseFare"
+                android:textAlignment="center"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERNews" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/faretxt"
+                android:paddingStart="5dp"
+                android:text="w"
+                android:textAlignment="center"
+                android:textColor="@color/switch_thumb_normal_material_dark"
+                android:textSize="18sp"
+                app:fontName="@string/font_UberClone" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/basefare_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="20dp"
+                android:text="100"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERNews" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/distancelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/basrfarelayout"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="@string/distancefare"
+                android:textAlignment="center"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERNews" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/distance_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="20dp"
+                android:text="200"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERNews" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/timefarelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distancelayout"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="@string/timefare"
+                android:textAlignment="center"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERNews" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/time_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="20dp"
+                android:text="300"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERNews" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/accesslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timefarelayout"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uberfee"
+                android:textAlignment="center"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERNews" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="400"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERNews" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/totalamountlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accesslayout"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/d_buttomtopboarder"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/total_payouts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/estimatedpayout"
+                android:textAlignment="center"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERMedium" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_payouts"
+                android:layout_marginTop="3dp"
+                android:text="*Rounded"
+                android:textAlignment="center"
+                android:textColor="@color/text_black"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:fontName="@string/font_UBERBook" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/totalamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="500"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERMedium" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/walletamountlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalamountlayout"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/walletamount"
+                android:text="@string/wallet_amounts"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERMedium" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/walletamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="- $500"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERMedium" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/promoamountlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/walletamountlayout"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/walletamount"
+                android:text="@string/promo_amounts"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERMedium" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/promoamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="- $500"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERMedium" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/payableamountlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/promoamountlayout"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/d_buttomtopboarder"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/payableamount"
+                android:text="@string/paid_amount"
+                android:textColor="@color/green_text_color"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERMedium" />
+
+            <com.trioangle.gofer.custompalette.FontTextView
+                android:id="@+id/payableamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="500"
+                android:textColor="@color/green_text_color"
+                android:textSize="18sp"
+                app:fontName="@string/font_UBERMedium" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+</LinearLayout>

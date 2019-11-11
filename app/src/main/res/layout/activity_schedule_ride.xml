@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/date_and_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/scheduleride_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/scheduleride"
+                android:textSize="20dp"
+            android:textColor="@color/text_light_gray"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/time_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:text="Mon, 30 Feb at 10:01 AM-10:16 AM"
+                android:textColor="@color/text_black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        <com.trioangle.gofer.singledateandtimepicker.SingleDateAndTimePicker
+            android:id="@+id/single_day_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            app:picker_curved="true"
+            app:picker_cyclic="true"
+            app:picker_mustBeOnFuture="true"
+            app:picker_visibleItemCount="7"
+
+
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paytmlayout"
+            android:background="@color/white_bgcolor"
+            android:paddingBottom="30dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="30dp">
+
+        <com.trioangle.gofer.custompalette.FontButton
+            android:id="@+id/set_pickup_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/button_color"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/setpickuptime"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:fontName="@string/font_UBERMedium" />
+    </RelativeLayout>
+
+
+</LinearLayout>

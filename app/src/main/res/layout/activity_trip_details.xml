@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.gofer.sidebar.trips.TripDetails">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gobackleftarrowwrite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/arrow"
+            android:text="@string/tripDetails"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back">
+
+        <RelativeLayout
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/imagelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mapimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mapimage"
+                    android:layout_margin="20dp"
+                    android:layout_marginBottom="40dp">
+
+                    <com.trioangle.gofer.custompalette.FontTextView
+                        android:id="@+id/datetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_black"
+                        android:textSize="16dp"
+                        app:fontName="@string/font_UBERBook" />
+
+                    <TextView
+                        android:id="@+id/carname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/datetime"
+                        android:paddingTop="5dp"
+                        android:text="@string/fordFiesta" />
+
+                    <com.trioangle.gofer.custompalette.FontTextView
+                        android:id="@+id/amountcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/text_black"
+                        android:textSize="16dp"
+                        app:fontName="@string/font_UBERBook" />
+
+                    <TextView
+                        android:id="@+id/cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/amountcard"
+                        android:layout_toStartOf="@+id/cancel"
+                        android:paddingTop="5dp"
+                        android:text="@string/cash"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/amountcard"
+                        android:paddingTop="5dp"
+                        android:text="" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/addressdetailayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagelayout">
+
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:text="r"
+                    android:textColor="@color/green_text_color"
+                    android:textSize="10dp"
+                    app:fontName="@string/font_UberClone" />
+
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/addressone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/dot"
+                    android:paddingStart="15dp"
+                    android:text="@string/address"
+                    android:textColor="@color/text_black"
+                    android:textSize="14dp"
+                    app:fontName="@string/font_UBERBook" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addressdetailayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressdetailayout">
+
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/dot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:text="X"
+                    android:textColor="@color/destination_red_marker"
+                    android:textSize="10dp"
+                    app:fontName="@string/font_UberClone" />
+
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/adresstwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/dot2"
+                    android:paddingStart="15dp"
+                    android:text="6,Elliots Promenade odaimanagar,Besant Nagar,Chennai,Tamil Nadu 600090,India "
+                    android:textColor="@color/text_black"
+                    android:textSize="14dp"
+                    app:fontName="@string/font_UBERBook" />
+
+
+            </RelativeLayout>
+
+            <!--
+                <RelativeLayout
+                    android:id="@+id/addressdetailayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imagelayout"
+                    android:background="@drawable/profileboarder"
+                    >
+
+                    <com.makuber.trioangle.custompalette.FontTextView
+                        android:id="@+id/dot"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="f"
+                        android:layout_marginTop="10dp"
+                        app:fontName="@string/font_UberClone"/>
+
+                    <com.makuber.trioangle.custompalette.FontTextView
+                        android:id="@+id/address"
+                        android:layout_toEndOf="@+id/dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:paddingStart="15dp"
+                        app:fontName="@string/font_UBERBook"
+                        android:textColor="#ff757575"
+                        android:text="6,Elliots Promenade odaimanagar,Besant Nagar,Chennai,Tamil Nadu 600090,India "/>
+
+                    <com.makuber.trioangle.custompalette.FontTextView
+                        android:id="@+id/dot2"
+                        android:layout_below="@+id/dot"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_black"
+                        app:fontName="@string/font_UberClone"
+                        android:layout_marginTop="30dp"
+                        android:text="u"/>
+
+                    <com.makuber.trioangle.custompalette.FontTextView
+                        android:layout_toEndOf="@+id/dot2"
+                        android:layout_below="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="15dp"
+                        app:fontName="@string/font_UBERMedium"
+                        android:textColor="#ff757575"
+                        android:text="6,Elliots Promenade odaimanagar,Besant Nagar,Chennai,Tamil Nadu 600090,India "/>
+
+                </RelativeLayout>
+            -->
+
+            <RelativeLayout
+                android:id="@+id/profilelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressdetailayout2">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="0dp" />
+
+                <com.trioangle.gofer.custompalette.FontTextView
+                    android:id="@+id/driver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/profile_image"
+                    android:text="@string/your_ride_with"
+                    android:textColor="@color/text_black"
+                    android:textSize="16dp"
+                    app:fontName="@string/font_UBERBook" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnrate"
+                android:text="@string/rate_your_ride"
+                android:background="@color/button_color"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@+id/profilelayout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/btnrate">
+
+                <!-- View pager to swipe views -->
+                <com.trioangle.gofer.sidebar.WrapContentViewPager
+                    android:id="@+id/pager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tablayoutdetails" />
+
+                <RelativeLayout
+                    android:id="@+id/tablayoutdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="#ffe0e0e0">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabLayout2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:minHeight="?attr/actionBarSize"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        app:tabIndicatorColor="@android:color/black"
+                        app:tabSelectedTextColor="@color/text_black"
+                        app:tabTextColor="@color/text_light_black" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

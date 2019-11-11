@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="@string/layout_direction"
+    tools:context="com.trioangle.gofer.sidebar.Help">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/header_color">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gobackleftarrowwrite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/arrow"
+            android:text="@string/helptitle"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/additionaltopic"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/back"
+        android:background="@drawable/profileboarder">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/additionaltopics" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tripviewlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/additionaltopic"
+        android:background="@drawable/profileboarder">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/tripsreview"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/accoutpaymentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tripviewlayout"
+        android:background="@drawable/profileboarder">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/accountpayment"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/guidelayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/accoutpaymentlayout"
+        android:background="@drawable/profileboarder">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/guideuber"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/signinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/guidelayout"
+        android:background="@drawable/profileboarder">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/signingup"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/morelayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/signinglayout"
+        android:background="@drawable/profileboarder">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/more"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/morelayout"
+        android:background="@drawable/profileboarder">
+
+        <com.trioangle.gofer.custompalette.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/accessibility"
+            android:textColor="@color/text_black"
+            app:fontName="@string/font_UBERBook" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

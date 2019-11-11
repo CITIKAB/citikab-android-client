@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY appname "Gofer">]>
+
+<resources>
+    <string name="app_name"></string>
+
+    <string name="layout_direction">1</string>
+    <string name="mobilenum">رقم الجوال موجود</string>
+
+    <string name="uberfee">"رسوم الوصول"</string>
+    <string name="distancefare">"أجرة بعد"</string>
+    <string name="timefare">"أجرة الوقت"</string>
+    <string name="estimatedpayout">"مجموع أجرة رحلة"</string>
+    <string name="wallet_amounts">"المبلغ محفظة"</string>
+    <string name="promo_amounts">"برومو المبلغ"</string>
+    <string name="use_in_case_of_emergency">استخدم في حالة الطوارئ</string>
+
+    <string name="no_connection">لا يوجد اتصال إنترنت</string>
+
+    <string name="schedule">"جدول "</string>
+    <string name="no_address_found">عذرا، لم يتم العثور على عنوان</string>
+    <string name="UpcomingRideSet">"مجموعة ركوب القادمة"</string>
+
+    <string name="currentestimation">"تقدير أجرة الحالي"</string>
+    <string name="pending">"قيد الانتظار</string>
+    <string name="schedule_car_details">"الشخصية"</string>
+    <string name="car_type">"&appname; X"</string>
+    <string name="setpickuptime">"ضبط وقت الاستلام"</string>
+    <string name="termschedule">"تقدير الفعلية التي ستقدم قبل لبيك اب فارس قد تختلف بسبب حركة المرور، والطقس اند &appname; الآخر لا نضمن أنه سوف سائق قبول طلب رحلتك"</string>
+    <string name="pasttrip">"الماضي"</string>
+    <string name="noschedulerides">"لا يوجد لديك ركوب الخيل الجدول</string>
+    <string name="edit_ride">تحرير الوقت</string>
+
+    <string name="people">اشخاص</string>
+
+
+    <string name="cancel_ride">"إلغاء الرحلة"</string>
+    <string name="upcomingtrips">"القادمة"</string>
+    <string name="no_location_data_provided">لا توجد بيانات موقع المقدمة</string>
+    <string name="service_not_available">عذرا، الخدمة غير متوفرة</string>
+    <string name="invalid_lat_long_used">العرض غير صالح أو العرض المستخدمة</string>
+    <string name="emergency_contacts">جهة اتصال للطوارئ</string>
+    <string name="let_s_make_travel_safe">اسمحوا \'ق جعل السفر آمنة</string>
+    <string name="alert_your_contact">تنبيه لكم ايها الاحباء في حالة الطوارئ إضافة إلى جهات الطوارئ الخاصة بك.</string>
+    <string name="you_can_add_5_contacts">يمكنك إضافة ما يصل إلى 5 الاتصالات</string>
+    <string name="remove">إزالة أي اتصال لإضافة آخر</string>
+    <string name="add_contacts">اضف جهات اتصال</string>
+    <string name="delete">حذف</string>
+    <string name="getting_car_detail">الحصول على سيارات التفاصيل ...</string>
+    <string name="press_again_toexit">اضغط مرة أخرى للخروج</string>
+    <string name="sorry_no_rides">عذرا، لا يركب متوفر في الوقت الحاضر</string>
+    <string name="sorry_unable_create_map">آسف! غير قادر على إنشاء الخرائط</string>
+    <string name="try_again">حاول ثانية</string>
+    <string name="receipt">إيصال</string>
+    <string name="addphoto">إضافة صورة</string>
+    <string name="takephoto">تصوير</string>
+    <string name="choosefromlib">اختر من المكتبة</string>
+    <string name="gettinglocate">الحصول على الموقع ...</string>
+    <string name="phone">هاتف</string>
+    <string name="verify">التحقق</string>
+    <string name="please_enter_promo">الرجاء إدخال الرمز الترويجي</string>
+    <string name="language">لغة</string>
+    <string name="selectlanguage">اختار اللغة</string>
+    <string name="turnoninternet">بدوره على الإنترنت</string>
+    <string name="ok">حسنا</string>
+    <string name="driverarrrive">سائق وصول الآن ...</string>
+    <string name="yourtripcancelledbydriver">رحلتك إلغاؤها من قبل سائق ...</string>
+    <string name="yourtripbegin">تبدأ رحلتك الآن ...</string>
+    <string name="paymentcompleted">الانتهاء من الدفع بنجاح ...</string>
+    <string name="rateyourride">معدل رحلتك</string>
+    <string name="smoothorsloopy">على نحو سلس أو مهمل؟</string>
+    <string name="writecomment">إرسال تعليقاتكم ...</string>
+    <string name="paymentdetails">بيانات الدفع</string>
+    <string name="otherreasons">أسباب أخرى</string>
+    <string name="enterworkaddress">ادخل عنوان العمل</string>
+    <string name="enterhomeaddress">أدخل عنوان المنزل</string>
+    <string name="servicenotavailable">الخدمة غير متوفرة...</string>
+
+    <string name="payment_name">"&appname;؛ دفع"</string>
+    <string name="getmoving">يتحركوا مع و&appname;.</string>
+    <string name="navigation_drawer_open">فتح درج التنقل</string>
+    <string name="navigation_drawer_close">انهيار درج التنقل</string>
+
+    <string name="mobileenterhint">أدخل المحمول \ n إصدار الخاص بك</string>
+    <string name="connectsocila">أو الاتصال مع الاجتماعية</string>
+    <string name="phonenumber">رقم الهاتف</string>
+
+    <string name="getmobilenumber">أدخل رقم هاتفك المحمول</string>
+    <string name="chooseaccount">اختيار حساب</string>
+    <string name="facebook">فيس بوك</string>
+    <string name="google">جوجل</string>
+
+    <string name="alert_your_emergency_contacts">تنبيه جهات الاتصال في حالات الطوارئ</string>
+    <string name="welcomeback">أهلا بكم من جديد، تسجيل الدخول إلى مواصلة</string>
+    <string name="forgotpassword">لقد نسيت كلمة المرور</string>
+    <string name="resetpasswords">اعد ضبط كلمه السر</string>
+    <string name="creatacount">انشئ حساب</string>
+    <string name="soscontent">يقوم &appname; بتجميع بيانات الموقع أثناء إجراء حجز نشط من جهازك لضمان تجربة قيادة سلسة وآمنة</string>
+    <string name="close">أغلق</string>
+    <string name="continue_alert">استمر</string>
+    <string name="continue_to_send_alert">الاستمرار في إرسال تنبيه؟</string>
+    <string name="sucessmessfe">الرساله المرسلة بنجاح</string>
+    <string name="messagesenttoadmin">رسالة المرسلة بنجاح إلى Admin</string>
+
+    <string name="enteremailadress">أدخل عنوان البريد الإلكتروني الذي استخدمته للتسجيل</string>
+    <string name="car_unavailable">"لسوء الحظ، &appname;، هذا غير متوفر حاليا في منطقتك."</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="cancel">إلغاء</string>
+    <string name="editaccount">حساب تحرير</string>
+    <string name="textpayment">دفع</string>
+    <string name="paypal_payment">باي بال</string>
+    <string name="addpayment">إضافة الدفع</string>
+    <string name="helptitle">مساعدة</string>
+    <string name="capacity">سعة</string>
+    <string name="fare">أجرة</string>
+    <string name="done">فعله</string>
+    <string name="continues">"استمر"</string>
+    <string name="pricepresented">سوف أجرة أن يكون السعر المقدم قبل الرحلة أو على أساس معدلات أقل وغيرها من الرسوم الإضافية والتسويات المعمول بها.</string>
+    <string name="basefare">الاجرة الاساسية</string>
+    <string name="perminute">+ في الدقيقة</string>
+    <string name="perkm">+ لكل كم</string>
+    <string name="requestuber">"طلب"</string>
+    <string name="amountno7">$ 53.00</string>
+    <string name="ubergo">وAPPNAME؛ الذهاب</string>
+    <string name="cancel_your_trip">"إلغاء رحلة الخاص بك"</string>
+    <string name="paymentmethods">طرق الدفع</string>
+    <string name="cash">السيولة النقدية</string>
+    <string name="wallets">محفظة نقود</string>
+    <string name="promotions">الترقيات</string>
+    <string name="add">"إضافة"</string>
+    <string name="add_promo">"إضافة الترويجي / الرمز هدية"</string>
+    <string name="free_trip">رحلة مجانية تصل إلى</string>
+    <string name="from"> من عند</string>
+    <string name="off">إيقاف</string>
+    <string name="promo_applied">الترويجي التطبيقية</string>
+    <string name="enter_promo_code">"أدخل الرمز الترويجي / هدية بك"</string>
+    <string name="wallet">محفظة نقود</string>
+    <string name="use_wallet">استخدام المحفظة</string>
+    <string name="wallet_amount">كمية محفظة الخاص بك هو</string>
+    <string name="add_amount">إضافة المبلغ</string>
+    <string name="payable_amount">"المبلغ المستحق"</string>
+    <string name="paid_amount">"المبلغ المدفوع"</string>
+    <string name="enter_amount">أدخل المبلغ</string>
+    <string name="add_money">"إضافة الأموال إلى المحفظة</string>
+    <string name="pay">دفع</string>
+    <string name="trip_id">رقم الرحلة:</string>
+    <string name="proceed">تقدم</string>
+    <string name="waitfordriver">انتظار تأكيد سائق</string>
+    <string name="gladepay">GladePay</string>
+    <string name="save">حفظ</string>
+    <string name="baseFare">الاجرة الاساسية</string>
+    <string name="currency">"دقة"</string>
+    <string name="usd">"USD ($)"</string>
+    <string name="selectcurrency">"اختر العملة"</string>
+    <string name="signOut">خروج</string>
+    <string name="tripDetails">تفاصيل رحلة</string>
+    <string name="fordFiesta">فورد فييستا</string>
+    <string name="FordFiesta">فورد فييستا</string>
+    <string name="nameexamplecom">name@example.com</string>
+    <string name="YourTrips">رحلات الخاصة بك</string>
+    <string name="address">6، Elliots النزهة odaimanagar، بيسانت النجار وتشيناي وتاميل نادو 600090، الهند</string>
+    <string name="request_car_msg">"الاتصال</string>
+    <string name="request_car_msg1">" بالقرب منك...</string>
+    <string name="favorites">المفضلة</string>
+    <string name="addhome">إضافة الرئيسية</string>
+    <string name="addwork">إضافة عمل</string>
+    <string name="home">"الصفحة الرئيسية</string>
+    <string name="work">"عمل"</string>
+    <string name="events">أحداث</string>
+    <string name="signout_msg">"هل أنت متأكد أنك تريد الخروج؟"</string>
+    <string name="cancel_s">"إلغاء"</string>
+    <string name="signout">"خروج"</string>
+    <string name="accountsetting">إعدادت الحساب</string>
+    <string name="enter4digit">أدخل رمز 4 أرقام أرسلت لك في</string>
+    <string name="resend">أعد إرسال الرمز</string>
+    <string name="affordable">بأسعار معقولة، وركوب الخيل اليومية</string>
+    <string name="otp_emty">"الرجاء إدخال مكتب المدعي العام"</string>
+
+    <string name="tripsreview">الرحلات واستعراض أجرة</string>
+    <string name="accountpayment">الحساب وخيارات الدفع</string>
+    <string name="guideuber">دليل لو&appname;.</string>
+    <string name="signingup">توقيع</string>
+    <string name="more">أكثر من</string>
+    <string name="accessibility">إمكانية الوصول</string>
+    <string name="additionaltopics">موضوعات أخرى</string>
+
+    <string name="farebreakdown">انفلات الأجرة</string>
+    <string name="farediscribction">ستكون الأجرة هي السعر المعروض عند الحجز ، أو إذا تغيرت الرحلة ، فستكون الأجرة على أساس الأسعار المقدمة.انقل الأجرة للحصول على التفاصيل.
+</string>
+    <string name="payment">دفع</string>
+    <string name="yourtrips">رحلات الخاصة بك</string>
+    <string name="begin_trip">"ابدأ رحلة"</string>
+    <string name="Rating">تقييم</string>
+    <string name="completed">منجز</string>
+    <string name="Cancelled">ألغيت</string>
+    <string name="end_trip">"رحلة النهاية"</string>
+    <string name="scheduled">"المقرر"</string>
+    <string name="no_cabs">لا سيارات الأجرة</string>
+
+    <string name="settings">إعدادات</string>
+    <string name="drivewithuber">دفع مع و&appname;.</string>
+    <string name="legal">قانوني</string>
+    <string name="whereto">ألى أين؟</string>
+    <string name="pickuplocation">"اختر موقعا"</string>
+    <string name="currentlocation">"الموقع الحالي"</string>
+    <string name="setlocationonmap">"تعيين الموقع على الخريطة"</string>
+    <string name="scheduleride">"جدولة ركوب"</string>
+    <string name="contact_C">"اتصل"</string>
+    <string name="contact">"اتصل"</string>
+    <string name="call">"مكالمة"</string>
+    <string name="callsonly">"يدعو فقط"</string>
+
+    <string name="arrival">"1:51 وصول"</string>
+    <string name="sharestatus">"وضع حصة"</string>
+    <string name="ratetext">"$ 79.76"</string>
+    <string name="mastercard">"ماستركارد 2930"</string>
+    <string name="restaurantdelights">"المسرات مطعم"</string>
+    <string name="uberittowangs">"اوبر لفانغس"</string>
+    <string name="enrote">"في المسار"</string>
+    <string name="mins">"دقيقة"</string>
+    <string name="min">"دقيقة"</string>
+    <string name="yourcurrenttrip">"رحلة الحالية الخاصة بك"</string>
+    <string name="change">"يتغيرون"</string>
+
+    <string name="notrip">"لا يوجد لديك رحلة"</string>
+    <string name="whatisyourname">"ما اسمك؟"</string>
+    <string name="confirmyourinformation">"تأكيد المعلومات الخاصة بك"</string>
+    <string name="first">"الاسم الاول"</string>
+    <string name="last">"الكنية"</string>
+    <string name="email_s">"البريد الإلكتروني"</string>
+    <string name="password">كلمه السر</string>
+    <string name="mobile_s">"رقم الهاتف المحمول"</string>
+    <string name="sigin_terms1">"من خلال الاستمرار، أؤكد أنني قد قرأت ووافقت على"</string>
+    <string name="sigin_terms2">"البنود والشروط"</string>
+    <string name="sigin_terms3">"و"</string>
+    <string name="sigin_terms4">"سياسة الخصوصية"</string>
+    <string name="cancelaccount_title">"إلغاء إنشاء حساب؟"</string>
+    <string name="cancelaccount_msg">"لن يتم حفظ المعلومات الخاصة بك."</string>
+    <string name="confirm">"تؤكد"</string>
+    <string name="your_ride_with">"ركوب الخاص بك مع"</string>
+    <string name="cancelaccouunt_bottom">"لإلغاء إنشاء حساب"</string>
+
+    <string name="error_msg_firstname">"يرجى ادخال الاسم الاول"</string>
+    <string name="error_msg_lastname">"الرجاء إدخال اسمك الأخير"</string>
+    <string name="error_msg_email">"رجاء قم بإدخال بريد الكتروني صحيح"</string>
+    <string name="error_msg_phone">"الرجاء إدخال رقم جوال صحيح"</string>
+    <string name="error_msg_password">"الرجاء إدخال الحد الأدنى من 6 أحرف"</string>
+    <string name="error_msg_rating">"يرجى إعطاء تصويتك"</string>
+
+    <string name="otp_mismatch">"عدم تطابق كود مكتب المدعي العام."</string>
+    <string name="InvalidMobileNumber">رقم الجوال غير صالح</string>
+    <string name="InvalidPassword">الرجاء إدخال الحد الأدنى من 6 أحرف</string>
+    <string name="Passwordmismatch">كلمة المرور عدم تطابق</string>
+    <string name="Enteryourpassword">ادخل رقمك السري</string>
+    <string name="Confirmyourpassword">أكد رقمك السري</string>
+
+    <string name="network_failure">الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+    <string name="internal_server_error"> الرجاء المحاولة مرة أخرى بعد بعض الأحيان. </string>
+
+    <string name="camera"> الكاميرا</string>
+    <string name="camera_roll"> ألبوم الكاميرا</string>
+    <string name="please_enable_permissions">  يرجى تمكين أذونات التطبيق</string>
+
+    <string name="nocabs">لا سيارات الأجرة</string>
+    <string name="loading">تحميل ...</string>
+    <string name="number_exists">بالفعل رقم الجوال موجود</string>
+    <string name="cancelreason">مطلوب إلغاء الأمر مطلوب</string>
+    <string name="no_cars">لا تتوفر سيارات ...</string>
+
+
+
+    <string-array name="cancel_types">
+        <item>"لماذا قمت بإلغاء؟"</item>
+        <item>"يا سائق، وأنا لا يمكن الاتصال"</item>
+        <item>"صوري التقاط كان موقع غير صحيح"</item>
+        <item>"بلدي سائق إلغاء"</item>
+        <item>"كان ETA طويلة جدا"</item>
+        <item>"كان ETA قصيرة جدا"</item>
+        <item>"طلب سائقي لي لإلغاء"</item>
+        <item>"آخر"</item>
+    </string-array>
+    <string name="not_now">ليس الان</string>
+    <string name="camera_permission_description">لالتقاط الصور والفيديو، تسمح بالوصول &appname;  إلى الكاميرا والتخزين</string>
+    <string name="credit_or_debit_card">إضافة بطاقة الائتمان أو الخصم</string>
+    <string name="card">بطاقة</string>
+    <string name="storage_permission_description">لتحميل صورة الملف الشخصي للوصول إلى السعة التخزينية</string>
+    <string name="location_permission_description">لطلب رحلتك ، اسمح بالوصول إلى موقع جهازك</string>
+    <string name="contacts_permission_description">لإضافة جهات اتصال في حالات الطوارئ ، اسمح بالوصول إلى جهات الاتصال
+        الخاصة بك
+    </string>
+    <string name="try_again_later">حاول مرة أخرى في وقت لاحق</string>
+    <string name="no_contacts_selected">لم يتم تحديد جهات اتصال</string>
+    <string name="next">التالى</string>
+    <string name="message">رسالة</string>
+    <string name="PeakPricing">ذروة التسعير الوقت</string>
+    <string name="iAcceptHigherPrice">أنا أقبل أجرة عالية</string>
+    <string name="peakPriceDescription">الطلب هو خارج المخططات! زادت الأسعار للحصول على المزيد &appname;؛ على الطريق.</string>
+    <string name="the_normal_fare">الأجرة العادية</string>
+    <string name="driver">سائق</string>
+    <string name="minimum_fare">الحد الأدنى من السعر</string>
+    <string name="signin">تسجيل الدخول</string>
+    <string name="register">تسجيل</string>
+    <string name="change_credit_or_debit_card">تغيير الائتمان أو بطاقة الخصم</string>
+    <string name="enable_permissions_to_proceed_further">تمكين إذن على المضي قدما</string>
+    <string name="pickup_and_drop_location_is_same">بيك اب وإسقاط الموقع نفسه ...</string>
+    <string name="unable_to_get_location">غير قادر على الحصول على موقع يرجى المحاولة مرة أخرى ...</string>
+    <string name="rate_your_ride">معدل رحلتك</string>
+    <string name="skip">تخطى</string>
+    <string name="enter_wallet_amount">يرجى إدخال الحافظة بمبلغ 50 أو أعلى</string>
+    <string name="manual_booking">الحجز اليدوي</string>
+    <string name="contact_admin">%s اتصل بالمسؤول عن الحجز</string>
+    <string name="call_admin">%s مكالمة</string>
+    <string name="contact_admin_for_manual_booking">اتصل بالمسؤول عن الحجز اليدوي</string>
+    <string name="dial">%s يتصل</string>
+    <string name="no_contact_found">لم يتم العثور على اتصال</string>
+
+
+    <string name="enter_otp">أدخل OTP</string>
+    <string name="resend_otp">"لم تستلم OTP؟"</string>
+    <string name="otp_send_to_phone_description">"لقد أرسلنا لك رمز الوصول عبر الرسائل القصيرة \n للتحقق من رقم الجوال"</string>
+    <string name="send_OTP_again_in">يمكنك إرسال OTP مرة أخرى في</string>
+    <string name="enter_valid_otp">أدخل صالح OTP!</string>
+    <string name="OTP">"مكتب المدعي العام  "</string>
+    <string name="mobile_verification">التحقق المحمول</string>
+    <string name="please_enter_mobile_number">الرجاء إدخال رقم هاتفك المحمول</string>
+    <string name="your_otp_is">"OTP الخاص بك هو \t"</string>
+    <string name="card_no">رقم البطاقة</string>
+    <string name="cvv">CVV</string>
+    <string name="yyyy">YY</string>
+    <string name="mm">MM</string>
+    <string name="enter_pin">أدخل رقم التعريف الشخصي</string>
+</resources>
